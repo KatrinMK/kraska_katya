@@ -48,7 +48,7 @@ function handleChange(e){
     console.log(products)
     //<!-- why doesn't work? -->
     if(selectedCat === 0 || selectedPrice === 0){
-        render(products),
+        (products),
         console.log(products)
     }
     //<!-- why doesn't work? -->
@@ -89,7 +89,6 @@ function handleClick(e){
         let elem = parseInt(addCartInput[i].value);
         if(0 <= elem){
             countEl += elem;
-            elem.
              allSum += (elem * addSum)
             // oneSum = (elem * addSum)
             //  allSum.push(oneSum)
