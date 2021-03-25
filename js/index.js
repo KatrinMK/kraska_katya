@@ -36,10 +36,6 @@ function handleChange(e){
     const selectedPrice = parseInt(priceSel.value)
     console.log(selectedCat, selectedPrice)
 
-    if(selectedCat === 0 || selectedPrice === 0){
-        products
-    }
-
     const filter = Array.from(productRes).filter((item) => {
         return ( 
             //  console.log((parseInt(item.children[2].children[0].innerText))),
@@ -50,7 +46,12 @@ function handleChange(e){
     })
     console.log(filter)
     console.log(products)
-
+    //<!-- why doesn't work? -->
+    if(selectedCat === 0 || selectedPrice === 0){
+        render(products),
+        console.log(products)
+    }
+    //<!-- why doesn't work? -->
 
     // const filterProduct = products.forEach.call((product) => {
     //     return (
@@ -66,7 +67,7 @@ function handleChange(e){
     //     console.log(products)
     //     filter = products
     // }
-    
+
     render(filter)
 }
 
@@ -81,6 +82,7 @@ function handleClick(e){
      const addSum = parseInt(cart.previousElementSibling.previousElementSibling.innerText);
     let countEl = 0;
     let allSum = 0;
+    // let allSum = [];
    
 
     for(let i = 0; i < addCartInput.length; i++) {
@@ -89,6 +91,7 @@ function handleClick(e){
             countEl += elem;
             elem.
              allSum += (elem * addSum)
+            // oneSum = (elem * addSum)
             //  allSum.push(oneSum)
             // if(oneSum !== 0){
             //     console.log(oneSum)
@@ -98,10 +101,8 @@ function handleClick(e){
         }
     }
         console.log(allSum)
-
         // let totalSum = allSum.reduce((item, currentValue)=> item, 0)
         // console.log(totalSum)
-
 
     const addCartSel = cartSel.innerHTML = countEl;
     if(totalPrice => 0){
