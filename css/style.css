@@ -197,36 +197,35 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-around;
 }
+/* ================== check-form */
  .check-form {
-    /* height: 100px;  */
-    /* position: absolute; */
-    /* top: 10px;
+    margin: 0.8rem;
+    height: 200px; 
+    position: absolute;
+    /* top: 10px; */
     right: 100px;
     width: 250px;
-    height:100px; */
-
+    z-index: 100;
+    border: black;
+    background: rgb(231, 229, 229);
+    padding: 0.6rem;
 }
 .check-form-inp {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    /* padding-left: 1rem; */
-    /* padding-right: 0.8rem; */
+    padding-left: 0.6rem; 
+    padding-right: 0.6rem; 
     text-align:center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    
 }
-.btn-check-form {
-
+.send {
+    height: 30px; 
+    width: 100%;
 }
 .hidden{display:none;}
 .hide{display:hidden;} 
 .show{display:block;}
-.send {
-
-}
-/* #section { background:#e2e2e2; padding:14px 0; }
-.agree {color:red; font-weight:bold;}
- .courses label {
-	display:block; overflow:hideen;
- } */
-
-

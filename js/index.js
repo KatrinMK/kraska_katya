@@ -8,7 +8,7 @@ const addCartInput = document.getElementsByClassName("qty__item");
 const addBtn = document.getElementsByClassName("product-box__btn");
 const order = document.getElementById("check");
 //let productRes = products;
-
+console.log(cartSel.innerHTML)
 function render(data){
      console.log(data);
     if(data !== products){
@@ -136,7 +136,11 @@ function handleSubmit(e){
     console.log(target.name)
     if(target.name !== "check-form"){
         return;
-    }
+    } 
+    // else if(cartSel.innerHTML === ""){
+    //         alert ('Пожалуйста, выберите что-нибудь.')
+    //         return
+    // }
     const textEl = target.yourname
     if(!textEl.value.trim().length){
         alert("Введите, пожалуйста, имя");
